@@ -1,0 +1,53 @@
+/* Variables generales */
+:root {
+    --color-primario: #2457a6;
+    --color-secundario: #eeeeee;
+    --color-texto: #222222;
+    --color-fondo: #ffffff;
+    --espaciado: 20px;
+    --borde-radio: 8px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+header {
+    padding: var(--espaciado);
+    background-color: var(--color-primario);
+    color: var(--color-fondo);
+}
+
+main {
+    padding: var(--espaciado);
+}
+
+.card {
+    padding: var(--espaciado);
+    background-color: var(--color-secundario);
+    border-radius: var(--borde-radio);
+}
+
+.card a {
+    color: var(--color-primario);
+}
+
+footer {
+    padding: var(--espaciado);
+    background-color: var(--color-primario);
+    color: var(--color-fondo);
+    text-align: center;
+}
+
+/* Modo oscuro */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-fondo: #181818;
+        --color-texto: #eeeeee;
+        --color-secundario: #292929;
+        --color-primario: #4d8de8;
+    }
+}

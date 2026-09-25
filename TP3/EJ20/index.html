@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ==================== HEADER / NAVBAR ==================== -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#inicio" class="logo">TechStore</a>
+
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ==================== HERO ==================== -->
+        <section class="hero" id="inicio">
+            <div class="hero-contenido">
+                <h1>Tecnología para todos</h1>
+
+                <p>
+                    Encontrá productos tecnológicos para mejorar
+                    tu experiencia todos los días.
+                </p>
+
+                <a href="#productos" class="boton">Ver productos</a>
+            </div>
+        </section>
+
+        <!-- ==================== PRODUCTOS ==================== -->
+       <!-- ==================== PRODUCTOS ==================== -->
+        <section class="productos" id="productos">
+            <h2>Nuestros productos</h2>
+
+            <div class="productos-grid">
+
+                <article class="card">
+                    <img src="img/notebook.jpg" alt="Notebook portátil">
+                    <h3>Notebook</h3>
+                    <p>Potencia y movilidad para estudiar y trabajar.</p>
+                    <a href="#contacto" class="boton">Consultar</a>
+                </article>
+
+                <article class="card">
+                    <img src="img/auriculares.jpg" alt="Auriculares inalámbricos">
+                    <h3>Auriculares</h3>
+                    <p>Sonido de calidad y conexión inalámbrica.</p>
+                    <a href="#contacto" class="boton">Consultar</a>
+                </article>
+
+                <article class="card">
+                    <img src="img/teclado.jpg" alt="Teclado mecánico">
+                    <h3>Teclado</h3>
+                    <p>Teclado mecánico ideal para trabajo y gaming.</p>
+                    <a href="#contacto" class="boton">Consultar</a>
+                </article>
+
+                <article class="card">
+                    <img src="img/monitor.jpg" alt="Monitor para computadora">
+                    <h3>Monitor</h3>
+                    <p>Excelente calidad de imagen para tu escritorio.</p>
+                    <a href="#contacto" class="boton">Consultar</a>
+                </article>
+
+                <article class="card">
+                    <img src="img/mouse.jpg" alt="Mouse inalámbrico">
+                    <h3>Mouse</h3>
+                    <p>Diseño cómodo y preciso para uso diario.</p>
+                    <a href="#contacto" class="boton">Consultar</a>
+                </article>
+
+                <article class="card">
+                    <img src="img/parlante.jpg" alt="Parlante portátil">
+                    <h3>Parlante</h3>
+                    <p>Disfrutá tu música en cualquier lugar.</p>
+                    <a href="#contacto" class="boton">Consultar</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ==================== TESTIMONIOS ==================== -->
+        <section class="testimonios" id="testimonios">
+            <h2>Opiniones de nuestros clientes</h2>
+
+            <div class="carrusel">
+
+                <article class="testimonio">
+                    <p>
+                        "Excelente atención y muy buena calidad
+                        en los productos."
+                    </p>
+                    <h3>— Laura</h3>
+                </article>
+
+                <article class="testimonio">
+                    <p>
+                        "La compra fue rápida y el producto llegó
+                        en perfectas condiciones."
+                    </p>
+                    <h3>— Martín</h3>
+                </article>
+
+                <article class="testimonio">
+                    <p>
+                        "Muy buena experiencia. Volvería a comprar
+                        sin dudas."
+                    </p>
+                    <h3>— Sofía</h3>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ==================== CONTACTO ==================== -->
+        <section class="contacto" id="contacto">
+            <h2>Contactanos</h2>
+
+            <form>
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="email">Correo electrónico</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="5"
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <p>© 2026 TechStore - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+/* Selector de ID */
+#titulo {
+    color: darkblue;
+    font-size: 32px;
+}
+
+/* Selector de clase */
+.card {
+    background-color: lightgray;
+    margin: 15px;
+    padding: 15px;
+}
+
+/* Selector descendiente */
+.card p {
+    color: darkgreen;
+    font-family: Arial, sans-serif;
+}
+
+/* Otro selector de clase */
+.destacado {
+    color: red;
+    font-weight: bold;
+}

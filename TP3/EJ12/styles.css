@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header,
+main {
+    padding: 20px;
+}
+
+/* Contenido para generar scroll */
+.contenido {
+    min-height: 1200px;
+}
+
+/* Contenedor padre del tooltip */
+.tooltip-contenedor {
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.elemento {
+    padding: 10px;
+    background-color: #dddddd;
+    cursor: pointer;
+}
+
+/* Tooltip */
+.tooltip {
+    position: absolute;
+    z-index: 2;
+
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 150px;
+    padding: 8px;
+
+    background-color: #333333;
+    color: white;
+    text-align: center;
+
+    visibility: hidden;
+}
+
+/* Mostrar tooltip al hacer hover */
+.tooltip-contenedor:hover .tooltip {
+    visibility: visible;
+}
+
+/* Botón volver arriba */
+.volver-arriba {
+    position: fixed;
+    z-index: 10;
+
+    right: 20px;
+    bottom: 20px;
+
+    padding: 12px 16px;
+    background-color: #333333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}

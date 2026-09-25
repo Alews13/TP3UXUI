@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+}
+
+main {
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.card {
+    margin-top: 50px;
+    padding: 25px;
+
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+
+    /* Animación */
+    animation-name: aparecer;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+/* Definición de la animación */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

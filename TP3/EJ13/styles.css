@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+}
+
+main {
+    max-width: 500px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+
+    border: 2px solid #aaaaaa;
+    border-radius: 8px;
+
+    font-family: Arial, sans-serif;
+
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Estado focus */
+input:focus,
+textarea:focus {
+    border-color: #0066cc;
+    box-shadow: 0 0 5px #0066cc;
+    outline: none;
+}
+
+/* Botón */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+
+    background-color: #0066cc;
+    color: white;
+    cursor: pointer;
+
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Estado hover */
+button:hover {
+    background-color: #004c99;
+}
+
+/* Estado active */
+button:active {
+    background-color: #003366;
+    transform: scale(0.96);
+}
