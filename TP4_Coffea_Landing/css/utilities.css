@@ -1,5 +1,0 @@
-@layer utilities {
-  .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
-  .skip-link { position: fixed; z-index: 100; top: .5rem; left: .5rem; padding: .75rem 1rem; color: var(--color-white); background: var(--color-espresso); border-radius: .5rem; transform: translateY(-150%); }
-  .skip-link:focus { transform: translateY(0); }
-}
