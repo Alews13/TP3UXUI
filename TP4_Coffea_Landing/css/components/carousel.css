@@ -1,0 +1,10 @@
+@layer components {
+  .carousel-wrap { position: relative; width: min(calc(100% - 2rem), 1476px); margin-inline: auto; }
+  .product-track { display: flex; gap: 4px; overflow-x: auto; padding: .5rem .15rem 1.25rem; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; }
+  .product-track::-webkit-scrollbar, .testimonial-track::-webkit-scrollbar { display: none; }
+  .carousel-arrow { position: absolute; z-index: 2; top: 50%; width: 56px; height: 56px; display: grid; place-items: center; border-radius: 50%; background: var(--color-sand); color: var(--color-espresso); font: 400 3rem/1 var(--font-body); transform: translateY(-50%); box-shadow: 0 4px 16px #0001; }
+  .carousel-arrow--left { left: -1.5rem; }
+  .carousel-arrow--right { right: -1.5rem; }
+  .carousel-arrow:hover { background: var(--color-espresso); color: var(--color-white); }
+  @media (max-width: 767px) { .carousel-wrap { width: calc(100% - 2rem); } .carousel-arrow { display: none; } .product-track { gap: .75rem; margin-right: -1rem; padding-right: 1rem; } }
+}

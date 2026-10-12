@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover Coffea's special coffee, desserts and coffee beans. Find your favourite cup and join our coffee community.">
+  <meta name="theme-color" content="#30261C">
+  <meta property="og:title" content="Coffea | Coffee and desserts">
+  <meta property="og:description" content="We serve the richest coffee in the city.">
+  <meta property="og:type" content="website">
+  <title>Coffea | Coffee and desserts</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600&family=Reggae+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="header__logo" href="#home" aria-label="Coffea home">coffea</a>
+      <details class="mobile-menu">
+        <summary aria-label="Open navigation menu"><span></span><span></span><span></span></summary>
+        <nav class="mobile-menu__panel" aria-label="Mobile navigation">
+          <a href="#home">Home</a><a href="#coffee">Coffee</a><a href="#dessert">Bakery</a><a href="#coffee">Shop</a><a href="#story">About</a><a href="#newsletter">Login</a>
+        </nav>
+      </details>
+      <nav class="header__nav" aria-label="Primary">
+        <a href="#home">Home</a><a href="#coffee">Coffee</a><a href="#dessert">Bakery</a><a href="#coffee">Shop</a><a href="#story">About</a><a class="header__login" href="#newsletter">Login</a>
+      </nav>
+      <a class="header__search" href="#newsletter" aria-label="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__shade"></div>
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow">WELCOME</p>
+          <h1 id="hero-title">We serve the<br>richest coffee<br>in the city!</h1>
+          <p class="hero__description">Coffee is more than a drink. It's a moment to slow down, enjoy the aroma and make an ordinary day feel special.</p>
+          <a class="button button--light" href="#coffee">Order Now</a>
+        </div>
+      </div>
+      <span class="hero__decor" aria-hidden="true">COFFEE · COMMUNITY · COMFORT</span>
+    </section>
+
+    <section class="categories" aria-label="Coffee and dessert categories">
+      <div class="container categories__list">
+        <a class="category" href="#coffee"><span class="category__icon" aria-hidden="true">☕</span><span>Hot Coffee</span></a>
+        <a class="category" href="#coffee"><span class="category__icon category__icon--cold" aria-hidden="true">❄</span><span>Cold Coffee</span></a>
+        <a class="category" href="#coffee"><span class="category__icon" aria-hidden="true">♨</span><span>Cup Coffee</span></a>
+        <a class="category" href="#dessert"><span class="category__icon" aria-hidden="true">♧</span><span>Dessert</span></a>
+      </div>
+    </section>
+
+    <section class="products section-pad" id="coffee" aria-labelledby="coffee-title">
+      <div class="section-heading"><p class="eyebrow eyebrow--dark">MADE WITH CARE</p><h2 id="coffee-title">OUR SPECIAL COFFEE</h2></div>
+      <div class="carousel-wrap">
+        <a class="carousel-arrow carousel-arrow--left" href="#coffee-card-4" aria-label="Scroll to previous coffee products">‹</a>
+        <div class="product-track" aria-label="Coffee products">
+          <article class="product-card" id="coffee-card-1">
+            <div class="product-card__image"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=668&q=80" width="334" height="364" alt="Freshly prepared iced coffee in a glass" fetchpriority="high"><label class="favorite" aria-label="Add Lungo coffee to favourites"><input type="checkbox"><span aria-hidden="true">♥</span></label></div>
+            <h3 class="product-card__title">Lungo coffee</h3><p class="product-card__description">A smooth, balanced coffee with a rich aroma and a long finish.</p>
+            <div class="product-card__bottom"><data class="product-card__price" value="200">Rs. 200</data><a class="button button--order" href="#newsletter">Order Now</a></div>
+          </article>
+          <article class="product-card" id="coffee-card-2">
+            <div class="product-card__image"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=668&q=80" width="334" height="364" alt="Cup of espresso coffee on a saucer" loading="lazy" decoding="async"><label class="favorite" aria-label="Add Espresso coffee to favourites"><input type="checkbox"><span aria-hidden="true">♥</span></label></div>
+            <h3 class="product-card__title">Espresso</h3><p class="product-card__description">A bold little cup with deep flavour and a delicate crema.</p>
+            <div class="product-card__bottom"><data class="product-card__price" value="200">Rs. 200</data><a class="button button--order" href="#newsletter">Order Now</a></div>
+          </article>
+          <article class="product-card" id="coffee-card-3">
+            <div class="product-card__image"><img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=668&q=80" width="334" height="364" alt="Latte with milk foam in a ceramic cup" loading="lazy" decoding="async"><label class="favorite" aria-label="Add Latte coffee to favourites"><input type="checkbox"><span aria-hidden="true">♥</span></label></div>
+            <h3 class="product-card__title">Café latte</h3><p class="product-card__description">Velvety steamed milk meets espresso for a comforting classic.</p>
+            <div class="product-card__bottom"><data class="product-card__price" value="200">Rs. 200</data><a class="button button--order" href="#newsletter">Order Now</a></div>
+          </article>
+          <article class="product-card" id="coffee-card-4">
+            <div class="product-card__image"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=668&q=80" width="334" height="364" alt="Coffee being poured into a cup" loading="lazy" decoding="async"><label class="favorite" aria-label="Add House coffee to favourites"><input type="checkbox"><span aria-hidden="true">♥</span></label></div>
+            <h3 class="product-card__title">House coffee</h3><p class="product-card__description">Our everyday favourite, freshly brewed and full of character.</p>
+            <div class="product-card__bottom"><data class="product-card__price" value="200">Rs. 200</data><a class="button button--order" href="#newsletter">Order Now</a></div>
+          </article>
+        </div>
+        <a class="carousel-arrow carousel-arrow--right" href="#coffee-card-2" aria-label="Scroll to next coffee products">›</a>
+      </div>
+    </section>
+
+    <section class="products products--dessert section-pad" id="dessert" aria-labelledby="dessert-title">
+      <div class="section-heading"><p class="eyebrow eyebrow--dark">A LITTLE SOMETHING SWEET</p><h2 id="dessert-title">OUR SPECIAL DESSERT</h2></div>
+      <div class="carousel-wrap">
+        <a class="carousel-arrow carousel-arrow--left" href="#dessert-card-4" aria-label="Scroll to previous desserts">‹</a>
+        <div class="product-track" aria-label="Dessert products">
+          <article class="product-card" id="dessert-card-1"><div class="product-card__image"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=668&q=80" width="334" height="364" alt="Chocolate cake with layers" loading="lazy" decoding="async"><label class="favorite" aria-label="Add chocolate cake to favourites"><input type="checkbox"><span aria-hidden="true">♥</span></label></div><h3 class="product-card__title">Chocolate cake</h3><p class="product-card__description">Rich chocolate layers for a deliciously indulgent break.</p><div class="product-card__bottom"><data class="product-card__price" value="200">Rs. 200</data><a class="button button--order" href="#newsletter">Order Now</a></div></article>
+          <article class="product-card" id="dessert-card-2"><div class="product-card__image"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=668&q=80" width="334" height="364" alt="Creamy dessert topped with fresh fruit" loading="lazy" decoding="async"><label class="favorite" aria-label="Add fruit dessert to favourites"><input type="checkbox"><span aria-hidden="true">♥</span></label></div><h3 class="product-card__title">Berry cream</h3><p class="product-card__description">Light, creamy and topped with bright seasonal berries.</p><div class="product-card__bottom"><data class="product-card__price" value="200">Rs. 200</data><a class="button button--order" href="#newsletter">Order Now</a></div></article>
+          <article class="product-card" id="dessert-card-3"><div class="product-card__image"><img src="https://images.unsplash.com/photo-1551024506-0cc0d4d?auto=format&fit=crop&w=668&q=80" width="334" height="364" alt="Freshly baked sweet pastry" loading="lazy" decoding="async"><label class="favorite" aria-label="Add pastry to favourites"><input type="checkbox"><span aria-hidden="true">♥</span></label></div><h3 class="product-card__title">Sweet pastry</h3><p class="product-card__description">A golden, flaky pastry made for your coffee break.</p><div class="product-card__bottom"><data class="product-card__price" value="200">Rs. 200</data><a class="button button--order" href="#newsletter">Order Now</a></div></article>
+          <article class="product-card" id="dessert-card-4"><div class="product-card__image"><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=668&q=80" width="334" height="364" alt="Strawberry cake with fresh fruit" loading="lazy" decoding="async"><label class="favorite" aria-label="Add strawberry cake to favourites"><input type="checkbox"><span aria-hidden="true">♥</span></label></div><h3 class="product-card__title">Strawberry cake</h3><p class="product-card__description">A soft cake finished with fruit and a touch of cream.</p><div class="product-card__bottom"><data class="product-card__price" value="200">Rs. 200</data><a class="button button--order" href="#newsletter">Order Now</a></div></article>
+        </div>
+        <a class="carousel-arrow carousel-arrow--right" href="#dessert-card-2" aria-label="Scroll to next desserts">›</a>
+      </div>
+    </section>
+
+    <section class="promo" id="story" aria-labelledby="promo-title">
+      <img class="promo__beans promo__beans--left" src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=520&q=80" width="260" height="168" alt="" loading="lazy" decoding="async">
+      <div class="promo__content"><p class="eyebrow eyebrow--dark">FROM OUR ROASTERS</p><h2 id="promo-title">Check Out Our<br>Best Coffee Beans</h2><a class="button button--dark" href="#coffee">Explore Our Products <span aria-hidden="true">»</span></a></div>
+      <img class="promo__beans promo__beans--right" src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?auto=format&fit=crop&w=503&q=80" width="252" height="168" alt="" loading="lazy" decoding="async">
+    </section>
+
+    <section class="testimonials section-pad" aria-labelledby="testimonials-title">
+      <div class="section-heading"><p class="script-heading">Come and Join</p><h2 id="testimonials-title">OUR HAPPY CUSTOMERS</h2></div>
+      <div class="testimonial-track">
+        <figure class="testimonial-card"><figcaption class="testimonial-card__head"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=112&q=80" width="56" height="56" alt="" loading="lazy" decoding="async"><span><strong>James Smith</strong><small>Entrepreneur</small></span><span class="stars" role="img" aria-label="4 out of 5 stars">★★★★☆</span></figcaption><blockquote>“A lovely place to pause, recharge and enjoy a really good cup of coffee.”</blockquote></figure>
+        <figure class="testimonial-card testimonial-card--featured"><figcaption class="testimonial-card__head"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=112&q=80" width="56" height="56" alt="" loading="lazy" decoding="async"><span><strong>Olivia Martin</strong><small>Designer</small></span><span class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</span></figcaption><blockquote>“The coffee is wonderful, the desserts are fresh, and the atmosphere makes every visit feel special.”</blockquote></figure>
+        <figure class="testimonial-card"><figcaption class="testimonial-card__head"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=112&q=80" width="56" height="56" alt="" loading="lazy" decoding="async"><span><strong>Daniel Lee</strong><small>Photographer</small></span><span class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</span></figcaption><blockquote>“Friendly service, a relaxed setting and a menu that always gives me a reason to return.”</blockquote></figure>
+      </div>
+      <nav class="testimonial-dots" aria-label="Testimonial shortcuts"><a href="#testimonials-title" aria-label="Testimonial one"></a><a href="#testimonials-title" aria-label="Testimonial two"></a><a href="#testimonials-title" aria-label="Testimonial three"></a></nav>
+    </section>
+
+    <section class="newsletter" id="newsletter" aria-labelledby="newsletter-title">
+      <img class="newsletter__beans newsletter__beans--left" src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=482&q=80" width="241" height="161" alt="" loading="lazy" decoding="async">
+      <div class="newsletter__content"><h2 id="newsletter-title">Subscribe to our Newsletter</h2><p>Join in and get 15% off your first order!</p><form class="newsletter__form" action="#" method="get"><label class="visually-hidden" for="newsletter-email">Email address</label><span class="newsletter__input-wrap"><span aria-hidden="true">✉</span><input id="newsletter-email" name="email" type="email" placeholder="Enter your email address" autocomplete="email" required></span><button class="button button--dark" type="submit">Subscribe</button></form></div>
+      <img class="newsletter__beans newsletter__beans--right" src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=482&q=80" width="241" height="161" alt="" loading="lazy" decoding="async">
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand"><a class="footer__logo" href="#home">Coffea</a><p>Every cup tells a story.<br>Make yours a good one.</p></div>
+      <nav class="footer__column" aria-label="Privacy links"><h2>PRIVACY</h2><ul><li><a href="#newsletter">Privacy policy</a></li><li><a href="#newsletter">Terms of use</a></li><li><a href="#newsletter">Cookies</a></li></ul></nav>
+      <nav class="footer__column" aria-label="Services links"><h2>SERVICES</h2><ul><li><a href="#coffee">Coffee</a></li><li><a href="#dessert">Bakery</a></li><li><a href="#coffee">Our shop</a></li></ul></nav>
+      <nav class="footer__column" aria-label="About links"><h2>ABOUT US</h2><ul><li><a href="#story">Our story</a></li><li><a href="#testimonials-title">Reviews</a></li><li><a href="#newsletter">Contact</a></li></ul></nav>
+      <nav class="footer__column" aria-label="Information links"><h2>INFORMATION</h2><ul><li><a href="#newsletter">FAQs</a></li><li><a href="#newsletter">Plans &amp; pricing</a></li><li><a href="#newsletter">Careers</a></li></ul></nav>
+      <div class="footer__column footer__social"><h2>SOCIAL MEDIA</h2><div class="social-links"><a href="#home" aria-label="X, formerly Twitter">𝕏</a><a href="#home" aria-label="Instagram">◎</a><a href="#home" aria-label="Facebook">f</a><a href="#home" aria-label="LinkedIn">in</a></div></div>
+    </div>
+    <div class="container footer__bottom"><p>© 2026 Coffea. All rights reserved.</p><a href="#home">Back to top ↑</a></div>
+  </footer>
+</body>
+</html>
