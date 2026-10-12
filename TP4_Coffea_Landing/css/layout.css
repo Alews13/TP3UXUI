@@ -1,0 +1,17 @@
+@layer layout {
+  .container { width: min(calc(100% - 2rem), var(--container)); margin-inline: auto; }
+  .section-pad { padding-block: clamp(4rem, 6vw, 6.5rem); }
+  .section-heading { text-align: center; margin: 0 auto 3.5rem; padding-inline: 1rem; }
+  .section-heading h2 { margin: 0; color: var(--color-espresso); font: 600 var(--fs-h2)/1.25 var(--font-display); letter-spacing: .04em; }
+  .eyebrow { margin-bottom: 1.25rem; font: 500 1rem/1.2 var(--font-body); letter-spacing: .25em; }
+  .eyebrow--dark { color: var(--color-muted); }
+  .button { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; gap: .65rem; border: 0; border-radius: var(--radius-pill); padding: .85rem 1.75rem; font: 500 1rem/1.2 var(--font-body); cursor: pointer; transition: transform 200ms ease, background-color 200ms ease, color 200ms ease; }
+  .button--light { background: var(--color-white); color: var(--color-espresso); padding: 1rem 2.5rem; font-size: 1.125rem; }
+  .button--dark { background: var(--color-espresso); color: var(--color-bg); }
+  .button:hover { transform: translateY(-2px); }
+  .button--light:hover { background: var(--color-sand); }
+  .button--dark:hover { background: var(--color-maroon); }
+  @media (min-width: 768px) { .container { width: calc(100% - 4rem); } }
+  @media (min-width: 1024px) { .container { width: calc(100% - 6rem); } }
+  @media (min-width: 1440px) { .container { width: min(calc(100% - 6rem), var(--container)); } }
+}

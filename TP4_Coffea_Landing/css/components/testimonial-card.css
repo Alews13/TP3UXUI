@@ -1,0 +1,19 @@
+@layer components {
+  .script-heading { margin-bottom: .5rem; font: 400 2rem/1.3 var(--font-accent); }
+  .testimonials .section-heading { margin-bottom: 2.5rem; }
+  .testimonial-track { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: center; gap: 1rem; width: min(calc(100% - 3rem), 1320px); margin-inline: auto; }
+  .testimonial-card { min-width: 0; margin: 0; padding: 1.75rem; border: 2px solid var(--color-border-soft); border-radius: var(--radius-card); background: var(--color-sand-40); }
+  .testimonial-card--featured { padding-block: 2rem; }
+  .testimonial-card__head { display: grid; grid-template-columns: 56px minmax(0, 1fr) auto; align-items: center; gap: .8rem; margin-bottom: 1.5rem; }
+  .testimonial-card__head img { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; }
+  .testimonial-card__head strong, .testimonial-card__head small { display: block; }
+  .testimonial-card__head strong { font: 600 1rem/1.3 var(--font-ui); }
+  .testimonial-card__head small { color: var(--color-text-soft); font: 400 .8rem/1.4 var(--font-ui); }
+  .stars { color: var(--color-star); letter-spacing: .03em; white-space: nowrap; font-size: .95rem; }
+  .testimonial-card blockquote { margin: 0; font: 500 .8rem/1.7 var(--font-ui); }
+  .testimonial-dots { display: flex; justify-content: center; gap: .7rem; margin-top: 2rem; }
+  .testimonial-dots a { width: 10px; height: 10px; border-radius: 50%; background: #c9c0b2; }
+  .testimonial-dots a:nth-child(2) { background: var(--color-espresso); }
+  @media (max-width: 1023px) { .testimonial-track { grid-template-columns: repeat(3, minmax(280px, 1fr)); overflow-x: auto; scroll-snap-type: x mandatory; padding: .5rem .1rem 1rem; } .testimonial-card { scroll-snap-align: center; } }
+  @media (max-width: 767px) { .testimonial-track { width: calc(100% - 2rem); grid-template-columns: minmax(0, 1fr); } .testimonial-card:not(.testimonial-card--featured) { display: none; } .testimonial-card { padding: 1.25rem; } .testimonial-card__head { grid-template-columns: 48px minmax(0,1fr) auto; gap: .65rem; } .testimonial-card__head img { width: 48px; height: 48px; } }
+}
